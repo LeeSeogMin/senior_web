@@ -240,7 +240,7 @@ nav {
 }
 
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/senior-phone.jpg');
+    background: linear-gradient(rgba(66, 153, 16, 0.7), rgba(103, 81, 47, 0.7)), url('../img/senior-phone.jpg');
     background-size: cover;
     background-position: center;
     height: 500px;
