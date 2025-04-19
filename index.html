@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시니어 전화상담 기반 정신건강 모니터링 시스템</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 푸터 스타일링 */
+        .footer {
+            background-color: #7986cb;
+            color: #000000;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+            width: 100%;
+        }
+        
+        .footer p {
+            margin: 8px 0;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .footer p:first-child {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        
+        .footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>시니어 전화상담 기반 정신건강 모니터링 시스템 개발</h1>
+            </div>
+            <nav id="main-nav">
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">홈</a></li>
+                    <li><a href="project_overview.html">프로젝트 개요</a></li>
+                    <li><a href="data_collection.html">데이터 수집 및 전처리</a></li>
+                    <li><a href="model_development.html">모델 개발 방법론</a></li>
+                    <li><a href="data_construction.html">데이터 구축 방법</a></li>
+                    <li><a href="system_integration.html">시스템 통합 계획</a></li>
+                    <li><a href="budget.html">예산 분석</a></li>
+                    <li><a href="schedule.html">월별 구현 계획</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h2>인공지능으로 노인 정신건강을<br>혁신적으로 케어합니다</h2>
+                    <p>일상 전화 대화만으로 정신건강 상태를 지속적으로 모니터링하는 혁신적인 AI 시스템</p>
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <h2 class="section-title">노인 정신건강 문제의 현실</h2>
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-number">15%</span>
+                        <p class="stat-text">65세 이상 노인 인구 중 우울증 경험 비율</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">80%</span>
+                        <p class="stat-text">정신건강 문제가 있는 노인 중 적절한 치료를 받지 못하는 비율</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3배</span>
+                        <p class="stat-text">정신건강 모니터링이 없는 노인의 심각한 우울증 발생 위험 증가율</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">42%</span>
+                        <p class="stat-text">조기 감지로 심각한 정신건강 문제를 예방할 수 있는 확률</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="content-section alt-bg">
+                <h2 class="section-title">이 프로젝트가 만들어낼 변화</h2>
+                <div class="impact-grid">
+                    <div class="impact-card">
+                        <div class="impact-image" style="background-image: url('img/early_detection.jpg');"></div>
+                        <div class="impact-content">
+                            <h3>조기 발견, 조기 대응</h3>
+                            <p>인지기능 저하나 우울증 초기 증상을 빠르게 감지하여 적절한 시기에 개입할 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-image" style="background-image: url('img/social_connection.jpg');"></div>
+                        <div class="impact-content">
+                            <h3>사회적 연결감 증진</h3>
+                            <p>정기적인 전화 상담을 통해 노인의 사회적 고립감을 줄이고 소통의 기회를 제공합니다.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-image" style="background-image: url('img/caregiver_support.jpg');"></div>
+                        <div class="impact-content">
+                            <h3>돌봄 제공자 지원</h3>
+                            <p>가족과 의료진에게 객관적인 정보를 제공하여 더 효과적인 케어가 가능하도록 돕습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="how-it-works" class="content-section">
+                <h2 class="section-title">어떻게 작동하나요?</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="process-content">
+                            <h3>일상 전화 대화 수집</h3>
+                            <p>노인과의 일상적인 전화 상담 대화가 시스템에 입력됩니다. 모든 개인정보는 철저히 보호되며 익명화됩니다.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="process-content">
+                            <h3>AI 기반 대화 분석</h3>
+                            <p>이중 파인튜닝된 LLM이 대화 내용을 분석하여 인지기능, 정서상태, 사회적 고립도를 평가합니다.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="process-content">
+                            <h3>시계열 패턴 감지</h3>
+                            <p>시간 경과에 따른 정신건강 상태 변화를 추적하고 이상 징후를 감지합니다.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <div class="process-content">
+                            <h3>맞춤형 알림 제공</h3>
+                            <p>위험 징후가 감지되면 보호자나 의료진에게 알림을 제공하고 조치 방안을 제안합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="content-section alt-bg">
+                <h2 class="section-title">기대 효과</h2>
+                <div class="testimonial-container">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "노인 정신건강 모니터링 시스템은 의료진이 더 많은 노인들을 효과적으로 케어할 수 있게 해주며, 위험 징후를 조기에 발견함으로써 심각한 문제로 발전하기 전에 개입할 수 있는 기회를 제공합니다."
+                        </div>
+                        <div class="testimonial-author">
+                                <h4 class="author-name">박지현 박사<span style="font-size: smaller;">(노인정신의학 전문의)</span></h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "어머니의 건강 상태를 원격으로 모니터링할 수 있다는 것은 큰 안심이 됩니다. 특히 매일 방문하기 어려운 상황에서, 이런 시스템이 있다면 어머니의 정신건강 변화를 알아차리는 데 큰 도움이 될 것입니다."
+                        </div>
+                        <div class="testimonial-author">
+                                <h4 class="author-name">김미영 님<span style="font-size: smaller;">(노인 보호자)</span></h4>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <div class="cta-content">
+                    <h2>혁신적인 노인 정신건강 케어의 미래를 함께 만들어갑니다</h2>
+                    <p>시니어 전화상담 기반 정신건강 모니터링 시스템 개발 프로젝트에 대해 더 알아보세요.</p>
+                    <div class="cta-buttons">
+                        <a href="project_overview.html" class="btn primary-btn">프로젝트 세부정보</a>
+                        <a href="data_construction.html" class="btn secondary-btn">기술 방법론 살펴보기</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>한신대 시니어 정신건강 AI 모니터링 시스템 개발팀</p>
+            <p>지도교수: 이석민, 안현</p>
+            <p>참여 학생: 정세빈, 김성아, 조서진, 한결 (이상 AISW), 임하연, 임현석(이상 공빅)</p>
+        </div>
+    </footer>
+</body>
+</html>

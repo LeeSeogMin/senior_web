@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>월별 구현 계획 - 시니어 전화상담 기반 정신건강 모니터링 시스템</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 푸터 스타일링 */
+        .footer {
+            background-color: #7986cb; /* 훨씬 더 밝은 파란색으로 변경 */
+            color: #000000; /* 글자색을 검정색으로 변경하여 대비 향상 */
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+            width: 100%;
+        }
+        
+        .footer p {
+            margin: 8px 0;
+            font-size: 14px;
+            font-weight: 500; /* 글자 두께 증가 */
+        }
+        
+        .footer p:first-child {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        
+        .footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>시니어 전화상담 기반 정신건강 모니터링 시스템 개발</h1>
+            </div>
+            <nav id="main-nav">
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="project_overview.html">프로젝트 개요</a></li>
+                    <li><a href="data_collection.html">데이터 수집 및 전처리</a></li>
+                    <li><a href="model_development.html">모델 개발 방법론</a></li>
+                    <li><a href="data_construction.html">데이터 구축 방법</a></li>
+                    <li><a href="system_integration.html">시스템 통합 계획</a></li>
+                    <li><a href="budget.html">예산 분석</a></li>
+                    <li><a href="schedule.html" class="active">월별 구현 계획</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="page-header">
+                <h2>월별 구현 계획</h2>
+                <p>시니어 전화상담 기반 정신건강 모니터링 시스템의 단계별 개발 일정</p>
+            </div>
+            
+            <section class="content-section">
+                <h2>1. 프로젝트 일정 개요</h2>
+                
+                <p>본 프로젝트는 2024년 4월부터 9월까지 6개월간 진행되며, 각 단계별 세부 계획은 다음과 같습니다.</p>
+                
+                <div class="info-card">
+                    <div class="card-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>프로젝트 기간</h3>
+                    <ul>
+                        <li><strong>시작일</strong>: 2024년 4월 1일</li>
+                        <li><strong>종료일</strong>: 2024년 9월 30일</li>
+                        <li><strong>총 기간</strong>: 6개월</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="content-section alt-bg">
+                <h2>2. 1단계: 데이터 구축 및 모델 개발 기반 마련 (4-5월)</h2>
+                
+                <div class="timeline-detailed">
+                    <div class="timeline-phase">
+                        <h3>4월</h3>
+                        <ul>
+                            <li><strong>1주차</strong>: 프로젝트 킥오프 미팅</li>
+                            <li><strong>2주차</strong>: 데이터 수집 계획 수립</li>
+                            <li><strong>3주차</strong>: AI-Hub 노인 음성/대화 데이터셋 확보</li>
+                            <li><strong>4주차</strong>: 정신건강 평가 데이터 수집 시작</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="timeline-phase">
+                        <h3>5월</h3>
+                        <ul>
+                            <li><strong>1주차</strong>: 데이터 전처리 파이프라인 구축</li>
+                            <li><strong>2주차</strong>: 노인 특화 정신건강 평가 지표 설계</li>
+                            <li><strong>3주차</strong>: 오픈소스 LLM 선정 및 테스트</li>
+                            <li><strong>4주차</strong>: 1차 파인튜닝을 위한 데이터셋 준비</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="info-box">
+                    <h3>1단계 주요 산출물</h3>
+                    <ul>
+                        <li>데이터 수집 및 전처리 계획서</li>
+                        <li>노인 특화 정신건강 평가 지표 설계서</li>
+                        <li>기반 LLM 모델 선정 보고서</li>
+                        <li>전처리된 학습 데이터셋</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <h2>3. 2단계: 핵심 시스템 개발 (6-7월)</h2>
+                
+                <div class="timeline-detailed">
+                    <div class="timeline-phase">
+                        <h3>6월</h3>
+                        <ul>
+                            <li><strong>1주차</strong>: LLM 1차 파인튜닝 시작</li>
+                            <li><strong>2주차</strong>: 노인 특화 언어 패턴 분석</li>
+                            <li><strong>3주차</strong>: 시계열 데이터 분석 알고리즘 설계</li>
+                            <li><strong>4주차</strong>: 대화 텍스트 분석 모듈 개발 시작</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="timeline-phase">
+                        <h3>7월</h3>
+                        <ul>
+                            <li><strong>1주차</strong>: LLM 2차 파인튜닝 실시</li>
+                            <li><strong>2주차</strong>: 정신건강 상태 평가 모듈 개발</li>
+                            <li><strong>3주차</strong>: 변화 감지 알고리즘 구현</li>
+                            <li><strong>4주차</strong>: 초기 프로토타입 테스트</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>LLM 파인튜닝</h4>
+                        <ul>
+                            <li>일반 정신건강 도메인 1차 파인튜닝</li>
+                            <li>노인 특화 언어 패턴 2차 파인튜닝</li>
+                            <li>모델 성능 평가 및 최적화</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>시계열 분석</h4>
+                        <ul>
+                            <li>LSTM 기반 시계열 모델 개발</li>
+                            <li>정신건강 지표 변화 패턴 분석</li>
+                            <li>개인별 기준선 설정 알고리즘</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>프로토타입 개발</h4>
+                        <ul>
+                            <li>기본 UI/UX 설계</li>
+                            <li>핵심 기능 구현</li>
+                            <li>내부 테스트 실시</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="content-section alt-bg">
+                <h2>4. 3단계: 시스템 통합 및 평가 (8-9월)</h2>
+                
+                <div class="timeline-detailed">
+                    <div class="timeline-phase">
+                        <h3>8월</h3>
+                        <ul>
+                            <li><strong>1주차</strong>: 대시보드 UI/UX 설계</li>
+                            <li><strong>2주차</strong>: 시각화 모듈 개발</li>
+                            <li><strong>3주차</strong>: 알림 시스템 구현</li>
+                            <li><strong>4주차</strong>: 시스템 통합 테스트</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="timeline-phase">
+                        <h3>9월</h3>
+                        <ul>
+                            <li><strong>1주차</strong>: 소규모 테스트 그룹 모집</li>
+                            <li><strong>2주차</strong>: 시스템 성능 평가</li>
+                            <li><strong>3주차</strong>: 사용자 피드백 수집 및 반영</li>
+                            <li><strong>4주차</strong>: 최종 보고서 작성</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="card-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>최종 산출물</h3>
+                    <ul>
+                        <li>노인 정신건강 모니터링 시스템 프로토타입</li>
+                        <li>시스템 사용 매뉴얼</li>
+                        <li>성능 평가 보고서</li>
+                        <li>향후 연구 및 개발 방향 제안서</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <h2>5. 주요 마일스톤</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <h4>4월 말</h4>
+                        <p>데이터 수집 완료</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <h4>5월 말</h4>
+                        <p>평가 지표 설계 완료</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <h4>6월 말</h4>
+                        <p>1차 파인튜닝 모델 완성</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <h4>7월 말</h4>
+                        <p>핵심 기능 구현 완료</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <h4>8월 말</h4>
+                        <p>시스템 통합 완료</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <h4>9월 말</h4>
+                        <p>최종 시스템 평가 완료</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="content-section alt-bg">
+                <h2>6. 리스크 관리 계획</h2>
+                
+                <div class="info-box">
+                    <h3>잠재적 리스크 및 대응 전략</h3>
+                    <ul>
+                        <li><strong>데이터 수집 지연</strong>: 대체 데이터셋 활용 계획 수립, 수집 방법 다변화</li>
+                        <li><strong>모델 성능 미달</strong>: 추가 파인튜닝 및 모델 구조 수정, 대체 모델 검토</li>
+                        <li><strong>시스템 통합 문제</strong>: 단계적 통합 전략 수립, 모듈화된 설계로 문제 격리</li>
+                        <li><strong>테스트 그룹 모집 어려움</strong>: 대안 평가 방안 마련, 인센티브 제공 검토</li>
+                        <li><strong>컴퓨팅 자원 부족</strong>: 클라우드 컴퓨팅 자원 활용, 모델 경량화 방안 검토</li>
+                    </ul>
+                </div>
+                
+                <div class="tags">
+                    <span class="tag">프로젝트일정</span>
+                    <span class="tag">개발계획</span>
+                    <span class="tag">마일스톤</span>
+                    <span class="tag">단계별진행</span>
+                    <span class="tag">리스크관리</span>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>한신대 시니어 정신건강 AI 모니터링 시스템 개발팀</p>
+            <p>지도교수: 이석민, 안현</p>
+            <p>참여 학생: 정세빈, 김성아, 조서진, 한결 (이상 AISW), 임하연, 임현석(이상 공빅)</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

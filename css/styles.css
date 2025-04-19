@@ -1,0 +1,123 @@
+/* 전역 스타일 */
+:root {
+    --primary-color: #1e88e5;
+    --secondary-color: #ff9800;
+    --text-color: #333;
+    --bg-color: #f5f5f5;
+    --nav-bg: #fff;
+    --nav-active: #e3f2fd;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* 내비게이션 스타일 */
+nav {
+    background-color: var(--nav-bg);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
+    background-color: var(--nav-active);
+    color: var(--primary-color);
+}
+
+nav ul li a.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* 메인 콘텐츠 스타일 */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* 섹션 스타일 */
+section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 일정 관련 스타일 */
+.schedule-phase {
+    margin-bottom: 3rem;
+}
+
+.month-plan {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.month-plan h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.month-plan ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.schedule-milestones ul,
+.schedule-risks ul {
+    padding-left: 1.5rem;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 0.8rem 1rem;
+    }
+} 

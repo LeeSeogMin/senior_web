@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예산 분석 - 시니어 전화상담 기반 정신건강 모니터링 시스템</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 푸터 스타일링 */
+        .footer {
+            background-color: #7986cb; /* 훨씬 더 밝은 파란색으로 변경 */
+            color: #000000; /* 글자색을 검정색으로 변경하여 대비 향상 */
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+            width: 100%;
+        }
+        
+        .footer p {
+            margin: 8px 0;
+            font-size: 14px;
+            font-weight: 500; /* 글자 두께 증가 */
+        }
+        
+        .footer p:first-child {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        
+        .footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>시니어 전화상담 기반 정신건강 모니터링 시스템 개발</h1>
+            </div>
+            <nav id="main-nav">
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="project_overview.html">프로젝트 개요</a></li>
+                    <li><a href="data_collection.html">데이터 수집 및 전처리</a></li>
+                    <li><a href="model_development.html">모델 개발 방법론</a></li>
+                    <li><a href="data_construction.html">데이터 구축 방법</a></li>
+                    <li><a href="system_integration.html">시스템 통합 계획</a></li>
+                    <li><a href="budget.html" class="active">예산 분석</a></li>
+                    <li><a href="schedule.html">월별 구현 계획</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="page-header">
+                <h2>예산 분석</h2>
+                <p>시니어 전화상담 기반 정신건강 모니터링 시스템 개발을 위한 자원 배분 계획</p>
+            </div>
+            
+            <section class="content-section">
+                <h2>1. 예산 개요</h2>
+                
+                <p>본 프로젝트의 총 예산은 한화 700만원이며, 다음과 같은 주요 항목으로 구성됩니다:</p>
+                
+                <div class="info-card">
+                    <div class="card-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>예산 구성</h3>
+                    <ul>
+                        <li><strong>데이터 수집 및 처리</strong>: 150만원 (21.4%)</li>
+                        <li><strong>컴퓨팅 자원</strong>: 180만원 (25.7%)</li>
+                        <li><strong>개발 도구 및 API</strong>: 70만원 (10.0%)</li>
+                        <li><strong>인력 지원</strong>: 200만원 (28.6%)</li>
+                        <li><strong>테스트 및 검증</strong>: 50만원 (7.1%)</li>
+                        <li><strong>예비비</strong>: 50만원 (7.1%)</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="content-section alt-bg">
+                <h2>2. 항목별 예산 상세</h2>
+                
+                <h3>2.1 데이터 수집 및 처리 (150만원)</h3>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>데이터 수집 비용</h4>
+                        <ul>
+                            <li>참여자 모집 및 인센티브: 60만원</li>
+                            <li>녹음 장비 및 소모품: 30만원</li>
+                            <li>데이터 레이블링: 30만원</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>데이터 처리 비용</h4>
+                        <ul>
+                            <li>전처리 도구 구매: 20만원</li>
+                            <li>품질 검증: 10만원</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3>2.2 컴퓨팅 자원 (180만원)</h3>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h4>클라우드 인프라</h4>
+                        <ul>
+                            <li>GPU 인스턴스: 120만원</li>
+                            <li>스토리지: 30만원</li>
+                            <li>네트워크 및 보안: 30만원</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3>2.3 개발 도구 및 API (70만원)</h3>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>소프트웨어 및 API</h4>
+                        <ul>
+                            <li>개발 도구 라이선스: 30만원</li>
+                            <li>STT API 사용료: 20만원</li>
+                            <li>모니터링 및 분석 도구: 20만원</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <h2>3. 인력 지원 계획 (200만원)</h2>
+                
+                <div class="info-box">
+                    <h3>인력 구성 및 지원금</h3>
+                    <table class="content-table">
+                        <thead>
+                            <tr>
+                                <th>역할</th>
+                                <th>인원</th>
+                                <th>지원금</th>
+                                <th>주요 업무</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>프로젝트 관리</td>
+                                <td>1명</td>
+                                <td>40만원</td>
+                                <td>전체 프로젝트 코디네이션 및 관리</td>
+                            </tr>
+                            <tr>
+                                <td>LLM 개발</td>
+                                <td>2명</td>
+                                <td>60만원</td>
+                                <td>모델 선정, 파인튜닝, 평가</td>
+                            </tr>
+                            <tr>
+                                <td>데이터 엔지니어링</td>
+                                <td>1명</td>
+                                <td>30만원</td>
+                                <td>데이터 수집 및 전처리</td>
+                            </tr>
+                            <tr>
+                                <td>백엔드 개발</td>
+                                <td>1명</td>
+                                <td>30만원</td>
+                                <td>API 및 서버 개발</td>
+                            </tr>
+                            <tr>
+                                <td>프론트엔드 개발</td>
+                                <td>1명</td>
+                                <td>40만원</td>
+                                <td>UI/UX 설계 및 구현</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <section class="content-section alt-bg">
+                <h2>4. 테스트 및 검증 (50만원)</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-vial"></i>
+                        </div>
+                        <h4>테스트 비용</h4>
+                        <ul>
+                            <li>테스트 그룹 모집: 20만원</li>
+                            <li>테스트 환경 구축: 15만원</li>
+                            <li>성능 평가 도구: 15만원</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <h2>5. 예비비 및 비용 최적화 (50만원)</h2>
+                
+                <h3>5.1 예비비 활용 계획</h3>
+                <div class="info-card">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>예비비 배정</h4>
+                    <p>전체 예산의 약 7.1%인 50만원을 예비비로 책정하여 다음과 같은 상황에 대비합니다:</p>
+                    <ul>
+                        <li>예상치 못한 기술적 문제 해결</li>
+                        <li>추가 리소스 필요 시 대응</li>
+                        <li>데이터 수집 과정에서의 예상 초과 비용</li>
+                        <li>모델 학습 시간 증가에 따른 추가 컴퓨팅 비용</li>
+                    </ul>
+                </div>
+                
+                <h3>5.2 비용 최적화 전략</h3>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>자원 활용 최적화</h4>
+                        <ul>
+                            <li>대학 내 기존 컴퓨팅 자원 활용</li>
+                            <li>오픈소스 라이브러리 및 도구 적극 활용</li>
+                            <li>클라우드 인스턴스 스케줄링 최적화</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>협력 관계 구축</h4>
+                        <ul>
+                            <li>노인복지센터와의 협력을 통한 데이터 수집 비용 절감</li>
+                            <li>클라우드 서비스 교육용 크레딧 활용</li>
+                            <li>학과 내 자원 공유 및 협업</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="tags">
+                    <span class="tag">예산계획</span>
+                    <span class="tag">자원배분</span>
+                    <span class="tag">비용최적화</span>
+                    <span class="tag">인력지원</span>
+                    <span class="tag">컴퓨팅자원</span>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>한신대 시니어 정신건강 AI 모니터링 시스템 개발팀</p>
+            <p>지도교수: 이석민, 안현</p>
+            <p>참여 학생: 정세빈, 김성아, 조서진, 한결 (이상 AISW), 임하연, 임현석(이상 공빅)</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

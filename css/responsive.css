@@ -1,0 +1,286 @@
+/* 반응형 스타일 */
+
+/* 큰 화면 (1200px 이상) */
+@media screen and (min-width: 1200px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+}
+
+/* 중간 화면 (992px 이하) */
+@media screen and (max-width: 992px) {
+    .section {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .hero {
+        height: 450px;
+    }
+    
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+    
+    .timeline::after {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        left: 0;
+    }
+    
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    
+    .timeline-date {
+        width: auto;
+        position: relative;
+        text-align: left;
+        left: 70px;
+        right: auto;
+        top: 0;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .timeline-dot {
+        left: 30px;
+        right: auto;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-dot {
+        left: 30px;
+    }
+    
+    .timeline-content {
+        margin-left: 60px;
+        margin-right: 0;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-content {
+        margin-left: 60px;
+    }
+    
+    .card-container,
+    .features-grid,
+    .goals-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    .effects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    .budget-overview {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+}
+
+/* 작은 화면 (768px 이하) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+    
+    .section {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .logo {
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background-color: var(--bg-color);
+        box-shadow: var(--shadow);
+        padding: var(--spacing-md);
+        z-index: 100;
+        text-align: center;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .nav-links li {
+        margin: var(--spacing-sm) 0;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-links a {
+        display: block;
+        width: 100%;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    
+    .hero {
+        height: 400px;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        align-items: center;
+    }
+    
+    .features-grid,
+    .card-container,
+    .goals-container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .budget-item {
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+    
+    .page-header {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .page-header h2 {
+        font-size: 2rem;
+    }
+    
+    .content-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .content-section h3 {
+        font-size: 1.4rem;
+    }
+    
+    .tech-approach {
+        gap: var(--spacing-md);
+    }
+    
+    .timeline-detailed {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .timeline-phase {
+        padding: var(--spacing-md);
+    }
+}
+
+/* 초소형 화면 (480px 이하) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .section {
+        padding: var(--spacing-md) 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .hero {
+        height: 380px;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    .logo h1 {
+        font-size: 2.5rem;
+    }
+    
+    .timeline-content {
+        padding: var(--spacing-md);
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .page-header {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .page-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .page-header p {
+        font-size: 1rem;
+    }
+    
+    .content-section {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+    
+    .content-section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .content-section h3 {
+        font-size: 1.3rem;
+    }
+    
+    .feature-icon,
+    .goal-icon {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 1.8rem;
+    }
+    
+    .info-card,
+    .feature-item,
+    .goal-item,
+    .team-info,
+    .timeline-phase,
+    .tech-item {
+        padding: var(--spacing-md);
+    }
+}

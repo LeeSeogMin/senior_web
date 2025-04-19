@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모델 개발 방법론 - 시니어 전화상담 기반 정신건강 모니터링 시스템</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 푸터 스타일링 */
+        .footer {
+            background-color: #7986cb; /* 훨씬 더 밝은 파란색으로 변경 */
+            color: #000000; /* 글자색을 검정색으로 변경하여 대비 향상 */
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+            width: 100%;
+        }
+        
+        .footer p {
+            margin: 8px 0;
+            font-size: 14px;
+            font-weight: 500; /* 글자 두께 증가 */
+        }
+        
+        .footer p:first-child {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        
+        .footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>시니어 전화상담 기반 정신건강 모니터링 시스템 개발</h1>
+            </div>
+            <nav id="main-nav">
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="project_overview.html">프로젝트 개요</a></li>
+                    <li><a href="data_collection.html">데이터 수집 및 전처리</a></li>
+                    <li><a href="model_development.html" class="active">모델 개발 방법론</a></li>
+                    <li><a href="data_construction.html">데이터 구축 방법</a></li>
+                    <li><a href="system_integration.html">시스템 통합 계획</a></li>
+                    <li><a href="budget.html">예산 분석</a></li>
+                    <li><a href="schedule.html">월별 구현 계획</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="page-header">
+                <h2>모델 개발 방법론</h2>
+                <p>노인 정신건강 모니터링을 위한 AI 모델 개발</p>
+            </div>
+            
+            <section class="content-section">
+                <h2>1. 모델 개발 개요</h2>
+                
+                <p>노인 정신건강 모니터링을 위한 AI 모델 개발은 다음과 같은 단계로 진행됩니다:</p>
+                
+                <div class="info-card">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>개발 로드맵</h3>
+                    <ul>
+                        <li><strong>1단계</strong>: 기반 모델 선정 및 전처리 (4-5월)</li>
+                        <li><strong>2단계</strong>: 모델 학습 및 최적화 (6-7월)</li>
+                        <li><strong>3단계</strong>: 통합 및 평가 (8-9월)</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="content-section alt-bg">
+                <h2>2. 단계별 개발 과정</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>1단계: 기반 모델 선정 및 전처리</h3>
+                        <h4>주요 작업</h4>
+                        <ul>
+                            <li>오픈소스 LLM 기반 모델 선정</li>
+                            <li>데이터 전처리 파이프라인 구축</li>
+                            <li>초기 모델 테스트 및 평가</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>2단계: 모델 학습 및 최적화</h3>
+                        <h4>주요 작업</h4>
+                        <ul>
+                            <li>1차 파인튜닝 실시</li>
+                            <li>노인 특화 언어 패턴 분석</li>
+                            <li>모델 성능 최적화</li>
+                            <li>시계열 데이터 분석 알고리즘 개발</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>3단계: 통합 및 평가</h3>
+                        <h4>주요 작업</h4>
+                        <ul>
+                            <li>모델 통합 및 시스템 연동</li>
+                            <li>소규모 테스트 그룹 실험</li>
+                            <li>성능 평가 및 최적화</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <h2>3. 개발 리소스</h2>
+                
+                <h3>3.1 컴퓨팅 리소스</h3>
+                <div class="info-card">
+                    <div class="card-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h4>하드웨어 요구사항</h4>
+                    <ul>
+                        <li>GPU 지원 개발 서버 (최소 NVIDIA T4 수준)</li>
+                        <li>최소 32GB RAM, 8 CPU 코어</li>
+                        <li>1TB 이상 저장 공간</li>
+                    </ul>
+                    <p><strong>예상 제약 해결책:</strong> 클라우드 GPU 인스턴스 활용 (Google Colab Pro, AWS, Azure 등)</p>
+                </div>
+                
+                <h3>3.2 소프트웨어 스택</h3>
+                <div class="info-card">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4>주요 도구 및 라이브러리</h4>
+                    <ul>
+                        <li><strong>Python</strong>: 주요 프로그래밍 언어</li>
+                        <li><strong>PyTorch</strong>: 딥러닝 프레임워크</li>
+                        <li><strong>Hugging Face</strong>: 트랜스포머 모델 생태계</li>
+                        <li><strong>Pandas/NumPy</strong>: 데이터 처리</li>
+                        <li><strong>PEFT/QLoRA</strong>: 파라미터 효율적 파인튜닝</li>
+                        <li><strong>FastAPI</strong>: API 개발 프레임워크</li>
+                    </ul>
+                </div>
+                
+                <h3>3.3 인력 자원 배분</h3>
+                <div class="info-box">
+                    <h4>팀 구성 및 역할</h4>
+                    <table class="content-table">
+                        <thead>
+                            <tr>
+                                <th>역할</th>
+                                <th>인원</th>
+                                <th>주요 업무</th>
+                                <th>필요 역량</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>프로젝트 관리</td>
+                                <td>2명</td>
+                                <td>전체 프로젝트 감독, 방향성 제시, 자원 조정</td>
+                                <td>프로젝트 관리, 인공지능</td>
+                            </tr>
+                            <tr>
+                                <td>LLM 개발</td>
+                                <td>2명</td>
+                                <td>모델 선정, 파인튜닝, 평가</td>
+                                <td>NLP, 딥러닝, 언어모델</td>
+                            </tr>
+                            <tr>
+                                <td>시계열 분석</td>
+                                <td>2명</td>
+                                <td>시계열 모델 개발, 데이터 분석, 패턴 감지</td>
+                                <td>시계열 분석, 통계, 머신러닝</td>
+                            </tr>
+                            <tr>
+                                <td>위험 감지 시스템</td>
+                                <td>1명</td>
+                                <td>위험 감지 시스템 분류 모델, 알림 시스템</td>
+                                <td>분류 알고리즘, 알림 시스템</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="note"><strong>참고:</strong> 학생의 역량에 따라 유연하게 업무 조정 예정. 인공지능 지식이 있는 학생들이 다른 학생들을 지원하는 멘토링 체계 운영</p>
+                </div>
+            </section>
+            
+            <section class="content-section alt-bg">
+                <h2>4. 모델 아키텍처 및 접근 방법</h2>
+                
+                <div class="tech-approach">
+                    <div class="tech-item">
+                        <h3>이중 파인튜닝 접근법</h3>
+                        <p>효과적인 노인 정신건강 평가를 위해 이중 파인튜닝 접근법을 사용합니다:</p>
+                        <ul class="tech-details">
+                            <li><strong>1차 파인튜닝</strong>: 일반적인 정신건강 도메인에 대한 이해를 높입니다.</li>
+                            <li><strong>2차 파인튜닝</strong>: 노인 특유의 언어 패턴과 표현 방식에 모델을 최적화합니다.</li>
+                            <li><strong>파라미터 효율성</strong>: QLoRA와 같은 기법을 통해 제한된 컴퓨팅 리소스로 효율적인 학습을 진행합니다.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <h3>시계열 분석 접근법</h3>
+                        <p>시간 경과에 따른 정신건강 상태 변화를 추적하기 위한 시계열 분석 접근법:</p>
+                        <ul class="tech-details">
+                            <li><strong>LSTM 네트워크</strong>: 장기적 패턴을 포착하기 위한 순환 신경망 활용</li>
+                            <li><strong>개인별 기준선</strong>: 개인화된 정상 상태 기준선 설정 및 편차 감지</li>
+                            <li><strong>멀티모달 분석</strong>: 텍스트, 음성 특성, 정신건강 지표의 통합 분석</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <h3>위험 감지 시스템</h3>
+                        <p>정신건강 위험을 조기에 감지하기 위한 시스템 설계:</p>
+                        <ul class="tech-details">
+                            <li><strong>다중 지표 통합</strong>: 인지기능, 우울증상, 사회적 고립도 등 다양한 지표 통합</li>
+                            <li><strong>분류 알고리즘</strong>: 위험 수준을 정상, 주의, 위험 등으로 분류하는 알고리즘</li>
+                            <li><strong>단계적 알림 시스템</strong>: 위험 수준에 따른 차별화된 알림 제공</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <h2>5. 성능 평가 방법</h2>
+                
+                <div class="info-box">
+                    <h3>평가 지표</h3>
+                    <ul>
+                        <li><strong>정확도 (Accuracy)</strong>: 정신건강 상태 분류의 정확성</li>
+                        <li><strong>민감도 (Sensitivity)</strong>: 위험 상태를 놓치지 않고 감지하는 능력</li>
+                        <li><strong>특이도 (Specificity)</strong>: 정상 상태를 잘못 위험으로 분류하지 않는 능력</li>
+                        <li><strong>F1 점수</strong>: 정밀도와 재현율의 조화 평균</li>
+                        <li><strong>일관성 (Consistency)</strong>: 시간 경과에 따른 평가의 일관성</li>
+                    </ul>
+                </div>
+                
+                <div class="tags">
+                    <span class="tag">인공지능</span>
+                    <span class="tag">LLM</span>
+                    <span class="tag">시계열 분석</span>
+                    <span class="tag">파인튜닝</span>
+                    <span class="tag">정신건강 모니터링</span>
+                    <span class="tag">위험 감지</span>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>한신대 시니어 정신건강 AI 모니터링 시스템 개발팀</p>
+            <p>지도교수: 이석민, 안현</p>
+            <p>참여 학생: 정세빈, 김성아, 조서진, 한결 (이상 AISW), 임하연, 임현석(이상 공빅)</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
